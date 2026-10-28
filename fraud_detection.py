@@ -11,7 +11,7 @@ st.markdown("please enter the transaction details and use the predict button")
 st.divider()
 
 transaction_type = st.selectbox("Transaction type",["PAYMENT","TRANSFER","CASH_OUT","DEBIT"])
-amount = st.number_input("Amount to be predicted",min_value=0.0, value=1000.0)
+amount = st.number_input("Amount",min_value=0.0, value=1000.0)
 oldbalanceOrg = st.number_input("Old balance (Sender)",min_value=0.0,value=10000.0)
 newbalanceOrig = st.number_input("New balance (Sender)",min_value=0.0,value=9000.0)
 oldbalanceDest = st.number_input("Old balance (Receviver)",min_value=0.0,value=0.0)
